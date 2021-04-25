@@ -166,11 +166,13 @@ body {
   height: 380px;
   margin-left: 3%;
 }*/
-.related__content {
+/*aside stilat in mod normal*/
+
+/* .related__content {
   display: flex;
   justify-content: spacebetween;
   align-items: center;
-  /*gap: 3.5%;*/
+  gap: 3.5%;
 }
 .related__item:first-child {
   margin-left: 0;
@@ -181,6 +183,20 @@ body {
   flex-grow: 1;
   flex-basis: 0;
   margin-left: 25px;
+} */
+/*aside stilat cu flexbox*/
+
+.related__content{
+  display:grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 3%;
+  grid-column-gap: 3%;
+}
+.related__item:first-child{
+}
+.related__item{
+  border: 3px solid white;
+  height: 380px;
 }
 
 .clearfix::after {

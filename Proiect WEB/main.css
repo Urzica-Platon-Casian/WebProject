@@ -195,12 +195,21 @@ body {
 .related__item:first-child{
 }
 .related__item{
+  position: relative;
   border: 3px solid white;
   height: 380px;
   background: url('http://fakeimg.pl/350x380?text=related&font=lobster');
   background-size: cover;
 }
-
+.related__title{
+  position: absolute;
+  bottom:0;
+  padding: 22px;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
 .clearfix::after {
   content: '';
   display: table;

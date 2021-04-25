@@ -197,6 +197,8 @@ body {
 .related__item{
   border: 3px solid white;
   height: 380px;
+  background: url('http://fakeimg.pl/350x380?text=related&font=lobster');
+  background-size: cover;
 }
 
 .clearfix::after {

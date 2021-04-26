@@ -207,7 +207,7 @@ body {
   border: 3px solid #85beff;
 }
 .related__item:hover:after {
-  content: '⟶';
+  content: '⟶'; 
   position: absolute;
   right: 28px;
   bottom: 5px;
@@ -235,4 +235,22 @@ body {
   content: '';
   display: table;
   clear: both;
+}
+
+.footer{
+  background-color: black;
+}
+.footer__social{
+  padding-bottom: 1px;
+}
+.social{
+  background-color: white;
+}
+.social__wrapper{
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.social__item{
+  list-style: none;
 }

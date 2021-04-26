@@ -46,7 +46,7 @@ body {
   background-color: #1f1f1f;
 }
 .nav__item:last-child {
-  min-width: 180px;
+  min-width: 200px;
   text-align: right;
   border-right: none;
 }
@@ -202,12 +202,19 @@ body {
   background-size: cover;
   transition: border 0.3s ease-in-out;
 }
-.related__item:hover{
-  background-image: linear-gradient(to top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+.related__item:hover {
+  background-image: linear-gradient(
+    to top,
+    #000000,
+    #3b3b3b,
+    #777777,
+    #b9b9b9,
+    #ffffff
+  );
   border: 3px solid #85beff;
 }
 .related__item:hover:after {
-  content: '⟶'; 
+  content: '⟶';
   position: absolute;
   right: 28px;
   bottom: 5px;
@@ -230,27 +237,79 @@ body {
   left: 0;
   bottom: 0;
 }
+.related__action {
+  display: block;
+  margin: 20px auto;
+  padding: 15px 10px;
+  max-width: 210px;
+  background-color: #002030;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.footer {
+  background-color: black;
+}
+.footer__social {
+  padding-bottom: 1px;
+}
+.social {
+  background-color: white;
+}
+.social__wrapper {
+  max-width: 720px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.social__item {
+  list-style: none;
+}
+
+.footer__nav {
+  border-bottom: 1px solid #3c3c3c;
+}
+.nav-secondary__wrapper {
+  max-width: 1120px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.nav-secondary__content {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  clear: both;
+}
+.nav-secondary__item {
+  float: left;
+}
+.nav-secondary__link {
+  display: block;
+  padding: 20px 24px;
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-secondary__link:hover {
+  color: #05beff;
+}
+
+.footer__copyright.copyright {
+  padding-top: 20px;
+  text-align: center;
+}
+.footer__copyright .copyright__text {
+  display: block;
+  color: #626262;
+  font-size: 12px;
+  padding: 5px 0 20px;
+}
 
 .clearfix::after {
   content: '';
   display: table;
   clear: both;
-}
-
-.footer{
-  background-color: black;
-}
-.footer__social{
-  padding-bottom: 1px;
-}
-.social{
-  background-color: white;
-}
-.social__wrapper{
-  max-width: 720px;
-  margin-right: auto;
-  margin-left: auto;
-}
-.social__item{
-  list-style: none;
 }

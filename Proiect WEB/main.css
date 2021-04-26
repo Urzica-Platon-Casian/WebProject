@@ -186,30 +186,51 @@ body {
 } */
 /*aside stilat cu flexbox*/
 
-.related__content{
-  display:grid;
+.related__content {
+  display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3%;
   grid-column-gap: 3%;
 }
-.related__item:first-child{
+.related__item:first-child {
 }
-.related__item{
+.related__item {
   position: relative;
   border: 3px solid white;
   height: 380px;
   background: url('http://fakeimg.pl/350x380?text=related&font=lobster');
   background-size: cover;
+  transition: border 0.3s ease-in-out;
 }
-.related__title{
+.related__item:hover{
+  background-image: linear-gradient(to top, #000000, #3b3b3b, #777777, #b9b9b9, #ffffff);
+  border: 3px solid #85beff;
+}
+.related__item:hover:after {
+  content: '⟶';
   position: absolute;
-  bottom:0;
+  right: 28px;
+  bottom: 5px;
+  color: white;
+  font-size: 25px;
+}
+.related__title {
+  position: absolute;
+  bottom: 0;
   padding: 22px;
   color: white;
   font-size: 20px;
   text-decoration: none;
   text-transform: uppercase;
 }
+.related__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
 .clearfix::after {
   content: '';
   display: table;

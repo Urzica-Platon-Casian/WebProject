@@ -65,7 +65,7 @@ body {
 .article {
 }
 .article__header {
-  background-color: black;
+  text-shadow: 3px 3px #525252;
   color: white;
   min-height: 400px;
   position: relative;
@@ -76,9 +76,37 @@ body {
   margin-left: auto;
 }
 .article__header {
-  background-image: url('http://fakeimg.pl/1800x400?text=.&font=lobster');
+  background-image: url('bg1.1.png');
   background-repeat: no-repeat;
   background-size: cover;
+  transition: 5s;
+  animation-name: animate;
+  animation-direction: alternate-reverse;
+  animation-duration: 30s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+}
+@keyframes animate {
+  0% {
+    background-image: url('bg2.2.png');
+  }
+  20% {
+    background-image: url('bg3.3.png');
+  }
+  40% {
+    background-image: url('bg4.4.png');
+  }
+  60% {
+    background-image: url('bg5.5.png');
+  }
+  80% {
+    background-image: url('bg1.1.png');
+  }
+  100% {
+    background-image: url('bg2.2.png');
+  }
 }
 .article__header .article__wrapper {
   position: absolute;
@@ -91,16 +119,12 @@ body {
   font-size: 35px;
   text-transform: uppercase;
 }
-.article__title::after {
-  content: '';
-  display: block;
-  margin: 28px auto 0;
-  background-color: #b5a8a8;
-  width: 28px;
-  height: 3px;
-}
+
 .article__meta {
-  color: #b5a8a8;
+  color: white;
+  text-shadow: 2px 2px #525252;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 .article__content h2 {
   padding: 35px 0 0px;
@@ -138,7 +162,7 @@ body {
   width: 100%;
 }
 
-.related {
+/* .related {
   background-color: black;
   padding: 40px 0;
 }
@@ -152,7 +176,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 22px;
-}
+} */
 /*.related__content{
   clear: both;
 }
@@ -186,7 +210,7 @@ body {
 } */
 /*aside stilat cu flexbox*/
 
-.related__content {
+/* .related__content {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 3%;
@@ -248,7 +272,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   font-size: 12px;
-}
+} */
 
 .footer {
   background-color: black;
@@ -278,7 +302,7 @@ body {
 }
 .nav-secondary__content {
   list-style: none;
-  padding-left: 0;
+  padding-left: 32px;
   margin: 0;
   clear: both;
 }
